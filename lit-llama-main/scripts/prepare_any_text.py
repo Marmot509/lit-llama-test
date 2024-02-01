@@ -16,12 +16,12 @@ from tqdm import tqdm
 
 IGNORE_INDEX = -1
 
-DATA_FILE_NAME = "input.txt"
+DATA_FILE_NAME = "lyrics.txt"
 
 
 def prepare(
-    destination_path: Path = Path("data/any"),
-    tokenizer_path: Path = Path("checkpoints/lit-llama/tokenizer.model"),
+    destination_path: Path = Path("data"),
+    tokenizer_path: Path = Path("tokenizer/tokenizer.model"),
     test_split_ratio: float = 0.9,  # default 90% train, 10% validation
     max_seq_length: int = 256,
     seed: int = 42,
